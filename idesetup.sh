@@ -78,6 +78,8 @@ deb file://$APT_REPO_DESTINATION/ stable main
 
 EOF
 
+apt update
+
 # Install OpenJDK
 blue "Installing OpenJDK..."
 pkg install -y openjdk-17 > /dev/null 2>&1
